@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link type rel="stylesheet" href="https://use.typekit.net/ftv7uak.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampai</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Caraque-solid", sans-serif;
+            font-size: 30pt;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            background-image: url('img/fondo.png');
+            position: static;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        header {
+            position: fixed;
+            font-size: 23pt;
+            font-weight: bold;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ff3333b4;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        #todomenosfooter{
+        width: 1500px;
+         }
+
+        h1{
+            font-family: "caraque-melted", sans-serif;
+            font-size: 140pt;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        h2{
+            font-size: 52pt;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 30pt;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        header img {
+            max-width: 120px;
+            height: auto;
+        }
+
+        .navegacion {
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+            margin-right: 40px;
+        }
+        .navegacion a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer {
+            background-color: rgba(230, 119, 119, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .celu {
+            width: 50%;
+            margin: 150px 20px 20px 0;
+            display: block;
+        }
+
+        .primero {
+            display: flex;
+            align-items: center;
+            gap: 200px;
+            text-align: left;
+            margin-top: 0px;
+        }
+
+        .segundo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: space-around;
+            text-align: center;
+            width: 100%;
+        }
+
+        .texto1 {
+            font-family: "quicksand", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: left;
+            max-width: 400px;
+            font-size: 30pt;
+            font-weight: bold;
+            margin-right: 0px;
+        }
+
+        #gente {
+            width: 40%;
+            margin: 0 0 0 0;
+            display: block;
+        }
+
+        #redes {
+            height: 35px;
+            width: 35px;
+            margin: 10px 100px 10px 100px;
+        }
+
+        #redes:hover {
+            animation: redes 1s;
+        }
+
+        @keyframes redes {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.8);
+            }
+        }
+
+        .descarga {
+            text-align: center;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            width: 100%;
+        }
+
+
+        .boton.descarga {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .descargar-boton {
+            background-color: #e67777;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-family: "quicksand", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 18pt;
+            cursor: pointer;
+            text-align: center;
+            width: 230px;
+        }
+
+        .descargar-boton:hover {
+            background-color: #ff6633da;
+        }
+
+
+        #frecu {
+    padding-bottom: 20px;
+        }   
+
+    #frecuentes {
+    padding: 80px 0;
+    } 
+
+    #frecuentes h3 {
+    padding-top: 100px;
+    margin-bottom: 30px;
+    }
+
+    #comentario1 {
+        background-color: #ffffff91;
+        border: solid #ee3131 4px;
+        border-radius: 20px;
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        } 
+
+    #comentario1 p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }  
+
+    #comentario2 {
+        background-color: #ffffff91;
+        border: solid #ee3131 4px;
+        border-radius: 20px;
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        } 
+
+    #comentario2 p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }  
+
+    #comentario3 {
+        background-color: #ffffff91;
+        border: solid #ee3131 4px;
+        border-radius: 20px;
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        } 
+
+    #comentario3 p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }  
+
+    #comentario4 {
+        background-color: #ffffff91;
+        border: solid #ee3131 4px;
+        border-radius: 20px;
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        } 
+
+    #comentario4 p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }  
+
+#preg1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30pt;
+}
+
+#pregunta1 p {
+    font-weight: 600;
+    margin: 0;
+}
+
+#pregunta1 {
+    background-color: #ffffff91;
+    border: solid #ee3131 4px;
+    border-radius: 20px;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#pregunta1:hover {
+    background-color: #ff6633bd;
+}
+
+#respuesta1 {
+    display: none;
+    padding: 0 15px;
+    background-color: #ffffff91;
+    border: 2px solid #ee3131;
+    border-radius: 20px;
+    font-family: "quicksand", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16pt;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease, padding 0.3s ease;
+}
+
+#preg1:hover #respuesta1 {
+    display: block;
+    padding: 10px;
+    transform: translateY(0);
+}
+
+#preg2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30pt;
+}
+
+#pregunta2 p {
+    font-weight: 600;
+    margin: 0;
+}
+
+#pregunta2 {
+    background-color: #ffffff91;
+    border: solid #ee3131 4px;
+    border-radius: 20px;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#pregunta2:hover {
+    background-color: #ff6633bd;
+}
+
+#respuesta2 {
+    display: none;
+    padding: 0 15px;
+    background-color: #ffffff91;
+    border: 2px #ee3131 solid;
+    border-radius: 20px;
+    font-size: 16pt;
+    font-family: "quicksand", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease, padding 0.3s ease;
+}
+
+#preg2:hover #respuesta2 {
+    display: block;
+    padding: 10px;
+    transform: translateY(0);
+}
+
+#preg3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30pt;
+}
+
+#pregunta3 p {
+    font-weight: 600;
+    margin: 0;
+}
+
+#pregunta3 {
+    background-color: #ffffff91;
+    border: solid #ee3131 4px;
+    border-radius: 20px;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#pregunta3:hover {
+    background-color: #ff6633bd;
+}
+
+#respuesta3 {
+    display: none;
+    padding: 0 15px;
+    background-color: #ffffff91;
+    border: 2px #ee3131 solid;
+    border-radius: 20px;
+    font-size: 16pt;
+    font-family: "quicksand", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease, padding 0.3s ease;
+}
+
+#preg3:hover #respuesta3 {
+    display: block;
+    padding: 10px;
+    transform: translateY(0);
+}
+
+#preg4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30pt;
+}
+
+#pregunta4 p {
+    font-weight: 600;
+    margin: 0;
+}
+
+#pregunta4 {
+    background-color: #ffffff91;
+    border: solid #ee3131d3 4px;
+    border-radius: 20px;
+    padding: 15px;
+    transition: background-color 0.5s ease;
+}
+
+#pregunta4:hover {
+    background-color: #ff6633bd;
+}
+
+#respuesta4 {
+    display: none;
+    padding: 0 15px;
+    background-color: #ffffff91;
+    border: 2px #ee3131 solid;
+    border-radius: 20px;
+    font-size: 16pt;
+    font-family: "quicksand", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transform: translateY(-10px);
+    transition: transform 0.5s ease, padding 0.5s ease;
+}
+
+#preg4:hover #respuesta4 {
+    display: block;
+    padding: 10px;
+    transform: translateY(0);
+}
+
+        #comunidad {
+            text-align: center
+        }
+    </style>
+
+</head>
+
+<div id="todomenosfooter">
+<body>
+    <main>
+        <header>
+            <img src="img/kampai.png" alt="Logo Kampai">
+            <div class="navegacion">
+                <a href="#descargar" class="tag-btn">Descargar</a>
+                <a href="#comunidad" class="tag-btn">Comunidad</a>
+                <a href="perfil.html" class="perfil-btn">Perfil</a>
+            </div>
+        </header>
+
+        <section class="primero">
+            <img src="img/celular 1.png" alt="Descripción de la imagen" class="celu">
+            <div class="texto1">
+                <h1>Kampai</h1>
+                <p>“Abrite a experiencias únicas y
+                    probá nuevos sabores de
+                    diversas culturas”</p>
+            </div>
+        </section>
+
+        <section class="segundo">
+            <div class="texto1">
+                <p> Generamos y alcanzamos posibilidades de propuestas gastronómicas,
+                    expandiendo los horizontes de las papilas gustativas del usuario.</p>
+            </div>
+            <img src="img/celular 2.png" alt="Imagen de personas" id="gente">
+        </section>
+
+
+        <h1 id="comunidad">Comunidad</h1>
+        <section class="comentarios-section">
+            <div class="comentarios-container">
+                <h2>Comentarios</h2>
+                <div id="comentario1">
+                    <h3>Juan Pérez</h3>
+                    <p>¡Me encanta Kampai! Es la mejor forma de conocer nuevos lugares y personas. Estoy totalmente
+                        enganchado.</p>
+                </div>
+                <div id="comentario2">
+                    <h3>Ana Gómez</h3>
+                    <p>Excelente aplicación, me ha permitido descubrir lugares increíbles. ¡Recomendada al 100%!</p>
+                </div>
+                <div id="comentario3">
+                    <h3>Carlos Martínez</h3>
+                    <p>¡Una experiencia única! He probado nuevos restaurantes y conocido gente increíble. Totalmente
+                        recomendable.</p>
+                </div>
+                <div id="comentario4">
+                    <h3>Laura Rodríguez</h3>
+                    <p>Kampai ha cambiado la forma en la que salgo a comer. ¡Me encanta la idea de explorar nuevos
+                        sitios y hacer amigos!</p>
+                </div>
+            </div>
+
+            <section id="frecuentes">
+                <div id="frecu">
+                    <h2>Preguntas Frecuentes</h2>
+                </div>
+                <div id="preg1">
+                    <div id="pregunta1">
+                        <p>¿Es gratuita la aplicación?</p>
+                    </div>
+                    <div id="respuesta1">
+                        <p><strong>Sí</strong>, Kampai es completamente gratuita para descargar y usar.</p>
+                    </div>
+                </div>
+                <div id="preg2">
+                    <div id="pregunta2">
+                        <p>¿Puedo crear un grupo para salir a comer?</p>
+                    </div>
+                    <div id="respuesta2">
+                        <p><strong>¡Claro!</strong> Puedes crear grupos con personas que busquen salir a comer y compartir experiencias.
+                        </p>
+                    </div>
+                </div>
+                <div id="preg3">
+                    <div id="pregunta3">
+                        <p>¿Dónde puedo descargar la app?</p>
+                    </div>
+                    <div id="respuesta3">
+                        <p>La app está disponible en <strong>Google Play</strong>  para Android y en la <strong>App Store</strong>  para iOS.
+                        </p>
+                    </div>
+                </div>
+                <div id="preg4">
+                    <div id="pregunta4">
+                        <p>¿Puedo ver las opiniones de otros usuarios sobre los lugares?</p>
+                    </div>
+                    <div id="respuesta4">
+                        <p> <strong>Sí</strong>, puedes ver los comentarios y opiniones de otros usuarios sobre los lugares que has visitado, en la sección de reseñas del restaurante,
+                             o en la sección con el mismo nombre en el perfil del usuario.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        <section id="descargar" class="descarga">
+            <h2>Descargar</h2>
+            <div class="boton">
+                <button class="descargar-boton">Descargar para Android</button>
+                <button class="descargar-boton">Descargar para iOS</button>
+            </div>
+        </section>
+
+    </main>
+    </div>
+
+</div>
+
+    <footer>
+        <div style="margin: 10px;">
+            <div class="img">
+                <img id="redes" src="img/iconos/instagram.png" alt="Instagram">
+                <img id="redes" src="img/iconos/facebook.png" alt="Facebook">
+                <img id="redes" src="img/iconos/tiktok.png" alt="TikTok">
+                <img id="redes" src="img/iconos/X.png" alt="X">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

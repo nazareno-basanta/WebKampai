@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link type rel="stylesheet" href="https://use.typekit.net/ftv7uak.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Caraque-solid", sans-serif;
+            background-color: #f2f2f2;
+            height: 100vh;
+            display: flex;
+            background-image: url('img/fondo.png');
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: #ff3333b4;
+            padding: 15px 10px;
+            margin-right: 25px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        header img {
+            max-width: 120px;
+            height: auto;
+            margin-left: 35px;
+        }
+
+        .volver {
+            font-family: "Caraque-solid", sans-serif;
+            margin-left: auto;
+            margin-right: 20px;
+            font-size: 23pt;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+
+        .caja {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+        }
+
+
+        .caja button {
+            width: 100%;
+            padding: 10px;
+            font-family: "quicksand", sans-serif;
+            font-weight: 800;
+            background-color: #ff9999;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .caja button:hover {
+            background-color: #ff6633da;
+        }
+
+        #boton {
+            background-color: #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="img/kampai.png" alt="Logo Kampai">
+        <a href="index.html" class="volver">Volver</a>
+    </header>
+
+    <div class="caja">
+        <h2>Iniciar sesión</h2>
+        <form>
+            <p id="boton">Usuario</p>
+            <p id="boton">Contraseña</p>
+            <button>Ingresar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
